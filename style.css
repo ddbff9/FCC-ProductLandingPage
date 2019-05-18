@@ -1,0 +1,75 @@
+.navBar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navList{
+  float: right;
+}
+.navList a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navList a:hover{
+  background-color: #111;
+}
+.active{
+  background-color: #4CAF50;
+}
+#logo{
+  float: left;
+  width: 175px;
+  height: auto;
+  position: fixed;
+  z-index: 500;
+}
+.body{
+  padding-top: 50px;
+  background-color: gray
+}
+.title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  font-size: 55px;
+  color: white;
+}
+.subTitle{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1px;
+  margin: 1px;
+  font-size: 20px;
+  color: white;
+}
+#emailLabel{
+  color: white;
+}
+.emailUL{
+  list-style-type: none;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+  background-color: #333;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+
+}
