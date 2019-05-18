@@ -2,36 +2,67 @@
 <html lang="en">
 <main>
   <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>Proeduct Landing Page</title>
-    <div class="nav">
-      <ul class="navBar">
-       <img src="images/fly-racing-logo_transparent.png" id="logo" />
-       <li class="navList"><a href="">Features</a></li>
-       <li class="navList"><a href="">How It Works</a></li>
-       <li class="navList"><a href="">Pricing</a></li>
-      </ul>
-    </div>
+      <header id="header">
+        <nav id="nav-bar">
+          <a href="#video"><img src="images/fly-racing-logo_transparent.png" id="header-img" /></a>
+          <ul class="nav-bar">
+            <li class="nav-link"><a id="nav-link" href="#vigilant">Vigilant</a></li>
+            <li class="nav-link"><a id="nav-link" href="#f2-carbon">F2 Carbon</a></li>
+            <li class="nav-link"><a id="nav-link" href="#formula">Formula</a></li>
+          </ul>
+        </nav>
+      </header>
   </head>
   <body class="body">
     <h1 class="title">FORMULA</h1>
     <h3 class="subTitle">ADAPTIVE   IMPACT   SYSTEM</h3><br>
 
-    <form action="https://www.freecodecamp.com/email-submit" method="POST">
+    <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
       <ul class="emailUL">
         <li>
           <label name="email" id="emailLabel">Email:</label>
-          <input name="email" type="email" required placeholder="Please enter your email">
+          <input name="email" type="email" required placeholder="Please enter your email" id="email">
           </li>
           <li>
-            <input name="email" type="submit" value="Get More Info" class="button">
+            <input name="email" type="submit" value="Get More Info" class="button" id="submit">
           </li>
         </ul>
     </form>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/5wTcrpy-Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video" id="howitworks">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5wTcrpy-Ko8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+    </div>
+      
+    <div class="helmets" id="helmets">
+      <div class="helmet" id="vigilant">
+        <h5>Vigilant</h5>
+        <img src="http://flyracing.s3.amazonaws.com/sites/flyracing/files/styles/1000_max/public/73-8613-FLY-Helmet-Vigilant-2019.jpg?itok=IvaflRni" id="helmet-photo">
+        <h3>$119.95</h3>
+        <form action="http://www.flyracing.com/product/moto/racewear/helmets/elite-vigilant-helmet/6509/blueblack" method="POST">
+        <input name="vigilant" type="submit" value="Buy Now" class="button">
+      </div>
+      <div class="helmet" id="f2-carbon">
+        <h5>F2 Carbon</h5>
+        <img src="http://flyracing.s3.amazonaws.com/sites/flyracing/files/styles/500_max/public/73-4242-FLY-Helmet-Shield-2019.jpg?itok=vdBkMc8M" id="helmet-photo">
+        <h3>$299.95</h3>
+        <form action="http://www.flyracing.com/product/moto/racewear/helmets/formula-carbon/7157/greyorangeblue" method="POST">
+        <input name="f2-carbon" type="submit" value="Buy Now" class="button">
+      </div>
+      <div class="helmet" id="formula">
+        <h5>Formula</h5>
+        <img src="http://flyracing.s3.amazonaws.com/sites/flyracing/files/styles/1000_max/public/73-4408-Helmet-Formula-2019.jpg?itok=QTWWwHDP" id="helmet-photo">
+        <h3>$649.95</h3>
+        <form action="http://www.flyracing.com/product/moto/racewear/helmets/f2-carbon-mips-shield-helmet/6494/whitered" method="POST">
+        <input name="f2-carbon" type="submit" value="Buy Now" class="button">
+        </form>
+      </div>
+    </div>
+    
   </body>
 </main>
 </html>

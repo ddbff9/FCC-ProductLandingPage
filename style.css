@@ -1,4 +1,4 @@
-.navBar{
+#header{
   position: fixed;
   top: 0;
   width: 100%;
@@ -8,23 +8,27 @@
   overflow: hidden;
   background-color: #333;
 }
-.navList{
-  float: right;
+#nav-bar li{
+  list-style-type: none;
 }
-.navList a {
+.nav-link{
+  float: right;
+  /* list-style-type: none; */
+}
+.nav-link a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-.navList a:hover{
+.nav-link a:hover{
   background-color: #111;
 }
 .active{
   background-color: #4CAF50;
 }
-#logo{
+#header-img{
   float: left;
   width: 175px;
   height: auto;
@@ -32,7 +36,7 @@
   z-index: 500;
 }
 .body{
-  padding-top: 50px;
+  padding-top: 60px;
   background-color: gray
 }
 .title {
@@ -71,5 +75,35 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+  cursor: pointer;
+}
+.video {
+  text-align: center;
+  padding: 20px;
+}
+.helmets {
+  display: flex;
+  background-color: #111;
+}
 
+.helmets > div {
+  background-color: #f1f1f1;
+  margin: 5px;
+  padding: 10px;
+  font-size: 30px;
+}
+.helmet{
+  flex: 1 0 10px;
+}
+
+#helmet-photo{
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .body {
+    background-color: #333;
+  }
+}
+.active{
+  background-color: #4CAF50;
 }
